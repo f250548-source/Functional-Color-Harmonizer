@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>functional color harmonizer</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main id="app_container">
+        <header id="header_bar">
+            <h1 id="page_title">Functional Color Harmonizer</h1>
+            <input id="color_input" type="color" value="#1f8fff" />
+        </header>
+        <section id="palette_container">
+            <div class="color_card" id="base_card">
+                <div class="color_swatch" id="base_hex"></div>
+                <div class="color_label" id="base_label">base</div>
+            </div>
+            <div class="color_card" id="complementary_card">
+                <div class="color_swatch" id="complementary_display"></div>
+                <div class="color_label" id="complementary_label">complementary</div>
+            </div>
+            <div class="color_card" id="triadic1_card">
+                <div class="color_swatch" id="triadic1_display"></div>
+                <div class="color_label" id="triadic1_label">triadic 1</div>
+            </div>
+            <div class="color_card" id="triadic2_card">
+                <div class="color_swatch" id="triadic2_display"></div>
+                <div class="color_label" id="triadic2_label">triadic 2</div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
